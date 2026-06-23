@@ -60,3 +60,4 @@ class VADDetector:
         self._buffer.clear()
         self._in_speech = False
         self._silence_start = None
+        self._model.reset_states()
