@@ -1,0 +1,14 @@
+faster-whisper==1.1.1
+silero-vad==5.1.2
+qdrant-client==1.14.2
+llama-index==0.12.37
+llama-index-vector-stores-qdrant==0.4.4
+openai==1.82.1
+PyQt6==6.9.1
+google-auth==2.40.3
+google-auth-oauthlib==1.2.1
+google-api-python-client==2.172.0
+httpx==0.28.1
+numpy==2.2.6
+torch==2.7.0
+torchaudio==2.7.0
