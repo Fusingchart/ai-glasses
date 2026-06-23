@@ -68,9 +68,8 @@ class Pipeline:
         )
 
         elapsed = time.monotonic() - t0
-        print(f"[pipeline] latency={elapsed:.2f}s topics={topics.topics}")
-        if elapsed > self._cfg.latency_target_s:
-            print(f"[pipeline] WARNING: exceeded {self._cfg.latency_target_s}s target")
+        status = "OK" if elapsed <= self._cfg.latency_target_s else "SLOW"
+        print(f"[pipeline] [{status}] latency={elapsed:.2f}s topics={topics.topics}")
 
         return card
 
